@@ -1,0 +1,5 @@
+__pycache__
+*/__pycache__
+*/*/__pycache__
+/test_dir
+/exp/rnn_speech_enhancement/nnet_C001_8_2_full_adddevnoise_enac/nnet*

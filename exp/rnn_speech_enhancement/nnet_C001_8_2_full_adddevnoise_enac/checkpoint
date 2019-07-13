@@ -1,0 +1,2 @@
+model_checkpoint_path: "nnet_iter26_lrate1.000000e-04_trloss3690.5430_cvloss567.4541_avglogbias0.000000_duration183s"
+all_model_checkpoint_paths: "nnet_iter26_lrate1.000000e-04_trloss3690.5430_cvloss567.4541_avglogbias0.000000_duration183s"
