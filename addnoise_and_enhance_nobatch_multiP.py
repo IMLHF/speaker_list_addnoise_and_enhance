@@ -22,7 +22,7 @@ num_process = 16
 
 # 15047
 root_dir = "/home/root1/aishell/iOS/data"
-new_root_dir = "/fast/aishell2_addnoise_enhanced_date"
+new_root_dir = "/home/root1/aishell/iOS/data"
 
 # 15123
 # root_dir = "/data/datalhf"

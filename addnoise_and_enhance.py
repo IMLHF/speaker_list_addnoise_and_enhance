@@ -10,16 +10,16 @@ import sys
 
 os.environ['CUDA_VISIBLE_DEVICES'] = sys.argv[1]
 
-snr_min = -5
-snr_max = 5
+snr_min = 0
+snr_max = 25
 speaker_n = 0
 all_speaker = 1991
 
 # root_dir = 'test_dir'
 root_dir = "/home/root1/aishell/iOS/data"
 clean_speakers_dir = os.path.join(root_dir, "wav")
-addnoise_dir_name = "wav_addnoise_snr-5+5"
-enhanced_dir_name = "wav_enhanced"
+addnoise_dir_name = "wav_addnoise_snr0_25"
+enhanced_dir_name = "wav_enhanced_snr0_25"
 # addnoise_speakers_dir = os.path.join(root_dir, "wav_addnoise_snr-5+5")
 # enhanced_speakers_dir = os.path.join(root_dir, "wav_enhanced")
 
