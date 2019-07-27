@@ -44,6 +44,8 @@ def addnoise_and_decoder_one_batch(waves_dir, noise_dir, sess, model):
   x_lengths = [] # [n_wav]
   for wav_dir in wave_dir_list:
     y_wave, sr_y = audio_tool.read_audio(wav_dir)
+    if y_wave.ndim != 1: # aishell has 2 channel wav
+      y_wave = y_wave.T[0]+y_wave.T[1]
     noise_id = np.random.randint(n_noise)
     noise_wave, sr_n = audio_tool.read_audio(noise_dir_list[noise_id])
     noise_wave = audio_tool.repeat_to_len(noise_wave, len(y_wave))
